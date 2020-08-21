@@ -15,7 +15,8 @@ const forecast = (latitude, longitude, callback) => {
                 body.current.temperature +
                 " ℃. There is a " +
                 body.current.precip +
-                "% chance of rain.")
+                "% chance of rain." +"@@@" +
+                body.current.weather_icons[0] )
         }
     })
 }

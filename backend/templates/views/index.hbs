@@ -11,16 +11,26 @@
 <body>
     <div class="main-content">
         {{>header}}
+        <div class="container">
+            <div class="subContainer">
+                <div>
+                    <p>Use this site to get your weather!</p>
 
-        <p>Use this site to get your weather!</p>
-
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
-
-        <p id="message-1"></p>
-        <p id="message-2"></p>
+                    <form>
+                        <input placeholder="Location">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <div class="textContainer">
+                    <p id="message-1"></p>
+                    <p id="message-2"></p>
+                </div>
+            </div>
+            
+            <div class="imgContainer">
+                <img src="" id="weatherPic" alt="">
+            </div>
+        </div>
     </div>
 
     {{>footer}}

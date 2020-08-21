@@ -19,9 +19,16 @@ weatherForm.addEventListener('submit', (e) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
+                document.getElementById("weatherPic").src = "";
             } else {
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forecast
+                var str = data.forecast;
+                var n = str.indexOf("@@@");
+                var len = str.length;
+                var picText = str.slice(n+3, len)
+                var weatherText = str.slice(0, n)
+                messageTwo.textContent = weatherText;
+                document.getElementById("weatherPic").src = picText;
             }
         })
     })
