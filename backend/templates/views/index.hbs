@@ -17,8 +17,8 @@
                     <div>
                         <p>Use this site to get your weather!</p>
 
-                        <form>
-                            <input placeholder="Location">
+                        <form id="searchForm">
+                            <input placeholder="Location" id="searchInput">
                             <button>Search</button>
                         </form>
                     </div>
@@ -38,16 +38,20 @@
                 <div class="subContainer2">
                     <p>This section for CRUD</p>
                     <div class="addContainer">
-                        <button>Add Data</button>
-                         <button>Get Data</button>
+                        <button id="addButton">Add Data</button>
+                        <button id="getButton">Get Data</button>
                     </div>
                     <div class="saveContainer">
-                        <input placeholder="Location" id="save">
-                        <button>Save Data</button>
+                        <form id="updateForm">
+                            <input placeholder="Location" id="updateInput">
+                            <button>update Data</button>
+                        </form>
                     </div>
                     <div class="deleteContainer">
-                        <input placeholder="Location" id="delete">
-                        <button>Delete Data</button>
+                        <form id="deleteForm">
+                            <input placeholder="Location" id="deleteInput">
+                            <button>Delete Data</button>
+                        </form>
                     </div>
                 </div>
                 <div class="crudResult">

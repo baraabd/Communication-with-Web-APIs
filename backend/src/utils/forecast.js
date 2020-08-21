@@ -10,14 +10,18 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, body.current.weather_descriptions[0] +
+            callback(undefined, {
+              weather_descriptions:
+                body.current.weather_descriptions[0] +
                 " It is currently " +
                 body.current.temperature +
                 " ℃. There is a " +
                 body.current.precip +
-                "% chance of rain." +"@@@" +
-                body.current.weather_icons[0] )
-        }
+                "% chance of rain.",
+              weather_icons: body.current.weather_icons[0],
+              city: body.request.query
+            });
+          }
     })
 }
 
