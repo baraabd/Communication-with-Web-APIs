@@ -34,10 +34,10 @@ app.get("/about", (req, res) => {
   });
 });
 
-app.get("/help", (req, res) => {
-  res.render("help", {
-    helpText: "This is some helpful text.",
-    title: "Help",
+app.get("/crud", (req, res) => {
+  res.render("crud", {
+    crudText: "This is some crud.",
+    title: "crud",
     name: "Baraa Abdullatif",
   });
 });
@@ -67,27 +67,6 @@ app.get("/weather", (req, res) => {
       console.log(location);
       console.log(forecastData);
     });
-  });
-});
-
-app.get("/products", (req, res) => {
-  if (!req.query.search) {
-    return res.send({
-      error: "You must provide a search term",
-    });
-  }
-
-  console.log(req.query.search);
-  res.send({
-    products: [],
-  });
-});
-
-app.get("/help/*", (req, res) => {
-  res.render("404", {
-    title: "404",
-    name: "Baraa Abdullatif",
-    errorMessage: "Help article not found.",
   });
 });
 
