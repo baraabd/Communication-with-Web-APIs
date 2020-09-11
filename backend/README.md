@@ -8,7 +8,7 @@ create a website that shows information retrieved from your self-built API and f
 Description and requirements for passing: : 
   
 1. Your own API should be an Express server built in NodeJS that handles any resource. (G)- Yes
-2. here must be an endpoint to retrieve all entities from your resource (GET) and an endpoint to create a new entity (POST) (G)- Yes
+2. Here must be an endpoint to retrieve all entities from your resource (GET) and an endpoint to create a new entity (POST) (G)- Yes
 3. For VG, the API will be expanded with endpoints to update an entity (PUT) (VG)- No
 4. delete an entity (DELETE) and retrieve a specific entity (GET) (VG) - No
 
@@ -24,7 +24,7 @@ npm i request
  
 
 To run: 
-- In order for the site to work, it needs access to the Src folder, where there is a file for server.js then you need write: node server.js
+- In order for the site to work, it needs access to the src folder, where there is a file for server.js then you need write: node server.js
 
 
 
