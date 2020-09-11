@@ -3,7 +3,7 @@ Communication-with-Web-APIs
  
 Introduction: 
  
-create a website that shows information retrieved from your self-built API and from an optional external API.
+create a website that shows information retrieved from your self-built API and from an optional external API. I used data from mapbox.com and weatherstack.com to fetch weather according to longitude and latitude.
   
 Description and requirements for passing: : 
   
