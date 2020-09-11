@@ -1,24 +1,17 @@
 {
-  "name": "backend",
+  "name": "Communication-with-Web-APIs",
   "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
-    "debug": "^2.6.9",
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "mime-db": "^1.44.0",
-    "mime-types": "^2.1.27",
-    "ms": "^2.0.0",
-    "request": "^2.88.2",
-    "safer-buffer": "^2.1.2",
-    "uuid": "^3.4.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Bara Abdullatif",
+  "license": "Bara Abdullatif",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  }
 }
